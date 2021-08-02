@@ -18,7 +18,7 @@ const LaunchType = new GraphQLObjectType({
         launch_year: { type: GraphQLString },
         launch_date_local: { type: GraphQLString },
         launch_success: { type: GraphQLBoolean },
-        rocket: { type: RocketType }
+        rocket: { type: RocketType }  // gets defined next, this is how create relationship inside of our schema
     })
 });
 

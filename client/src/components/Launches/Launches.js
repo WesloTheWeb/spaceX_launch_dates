@@ -1,5 +1,5 @@
 import React from 'react';
-import { useQuery, ApolloConsumer, gql } from "@apollo/react-hooks"
+import { Query, useQuery, ApolloConsumer, gql } from "@apollo/client"
 import LaunchItem from '../LaunchItem/LaunchItem';
 
 const LAUNCHES_QUERY = gql`
@@ -36,6 +36,5 @@ const Launches = (props) => {
         </>
     );
 };
-
 
 export default Launches;
